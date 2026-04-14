@@ -115,7 +115,7 @@ export default function OfficePage() {
                     <TableColumn>MÃ PHÒNG</TableColumn>
                     <TableColumn>TẦNG / PHÒNG</TableColumn>
                     <TableColumn>DIỆN TÍCH</TableColumn>
-                    <TableColumn>GIÁ THUÊ</TableColumn>
+                    <TableColumn>GIÁ THUÊ/M²/THÁNG</TableColumn>
                     <TableColumn align="center">HÀNH ĐỘNG</TableColumn>
                 </TableHeader>
                 <TableBody isLoading={loading} emptyContent={"Chưa có dữ liệu."}>

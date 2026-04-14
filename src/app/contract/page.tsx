@@ -143,7 +143,7 @@ export default function ContractPage() {
           <TableColumn>CÔNG TY THUÊ</TableColumn>
           <TableColumn>VĂN PHÒNG</TableColumn>
           <TableColumn>NGÀY KÝ - HẾT HẠN</TableColumn>
-          <TableColumn>GIÁ THUÊ/THÁNG</TableColumn>
+          <TableColumn>GIÁ THUÊ/M²/THÁNG</TableColumn>
           <TableColumn>TRẠNG THÁI</TableColumn>
           <TableColumn align="center">HÀNH ĐỘNG</TableColumn>
         </TableHeader>
