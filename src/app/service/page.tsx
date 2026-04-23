@@ -136,19 +136,25 @@ export default function ServicePricePage() {
         </div>
       </div>
 
-      {/* 🚀 TÓM TẮT THỐNG KÊ ĐỘNG (REAL-TIME) */}
+      {/* 🚀 TÓM TẮT THỐNG KÊ (Đã fix cứng dữ liệu) */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <Card className="border-none shadow-sm bg-purple-50 p-4">
             <p className="text-xs font-bold text-purple-600 uppercase">Dịch vụ cố định</p>
-            {/* padStart(2, '0') giúp số 1 hiển thị thành 01 cho đẹp */}
-            <p className="text-2xl font-black">{fixedServicesCount.toString().padStart(2, '0')}</p>
-            <p className="text-[10px] text-neutral-400">Vệ sinh, Bảo vệ, Rác, Thang máy</p>
+            <p className="text-2xl font-black">03</p>
+            <p className="text-[10px] text-neutral-400">Vệ sinh, Bảo vệ, Bảo trì</p>
         </Card>
+        
         <Card className="border-none shadow-sm bg-blue-50 p-4">
             <p className="text-xs font-bold text-blue-600 uppercase">Dịch vụ biến đổi</p>
-            <p className="text-2xl font-black">{variableServicesCount.toString().padStart(2, '0')}</p>
-            <p className="text-[10px] text-neutral-400">Điện, Nước (Tính theo chỉ số)</p>
+            <p className="text-2xl font-black">02</p>
+            <p className="text-[10px] text-neutral-400">Ăn uống, Gửi xe</p>
         </Card>
+
+        {/* Thẻ thứ 3 (Phí gửi xe) tôi vẫn giữ nguyên hiện trạng. 
+            Nếu bạn muốn bỏ luôn thẻ này đi vì đã gộp "Gửi xe" vào thẻ thứ 2, 
+            bạn có thể xóa <Card> này và đổi className của thẻ <div> bọc ngoài cùng thành: 
+            className="grid grid-cols-1 md:grid-cols-2 gap-6" 
+        */}
         <Card className="border-none shadow-sm bg-orange-50 p-4">
             <p className="text-xs font-bold text-orange-600 uppercase">Phí gửi xe</p>
             <p className="text-2xl font-black">{parkingServicesCount.toString().padStart(2, '0')}</p>
